@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Scren Recorder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <h1>Simple Desktop Capture Demo</h1>
+      <p>
+        Hang on a sec while your cam and screen load up. You won't see your
+        screen preview when the window is on that screen
+      </p>
+      <div id="debug"></div>
+      <div id="controls">
+        <button id="start-stop" class="loading">Start!</button>
+      </div>
+      <div id="previews">
+        <video
+          id="desktop"
+          class="hide-on-shared-screen"
+          height="360"
+          width="640"
+          muted
+        ></video>
+        <video id="cam" height="360" width="640" muted></video>
+      </div>
+    </div>
+    <script>
+      require("./renderer.js");
+    </script>
+  </body>
+</html>

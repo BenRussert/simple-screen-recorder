@@ -1,0 +1,18 @@
+#root:not(.offscreen) .hide-on-shared-screen {
+  display: none;
+}
+#start-stop.loading {
+  display: none;
+}
+
+#start-stop {
+  height: 60px;
+  width: 80px;
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+}
+
+[role="button"] {
+  -webbkit-app-region: no-drag;
+}
